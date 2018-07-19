@@ -67,6 +67,13 @@ Directories needed for this routine:
 - /raw_netCDF 	- directory containing multiple days of raw spectra in netCDF format (downloaded from ARM archive)
 - /temp	- directory to store daily raw spectra. Spectra deleted from this directory after processing day of spectra.
 
+Data files from ARM Archive:
+This routine processes GE copol spectra from the data stream:
+- olikazrspeccmaskgecopolM1.a0.YYYYMMDD.HHMMSS.nc
+Put multiple days of raw spectra files in the directory:
+- /raw_netCDF 	- directory containing multiple days of raw spectra in netCDF format (downloaded from ARM archive)
+
+
 # Main processing routine
 
 Routine: **main_make_oli_hourly_mat_spc_kazr_ge_copol_2018_0606.m**
