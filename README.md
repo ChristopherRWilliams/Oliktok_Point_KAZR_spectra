@@ -106,7 +106,7 @@ Functions needed for this routine:
 - func_replace_Nstd_nos_with_NaN.m
 - func_save_ge_all_mom_in_netCDF.m
 
-Routine: main_plot_ge_15sec_mom_nc_all_ZVW_2018_0718.m
+Routine: **main_plot_ge_15sec_mom_nc_all_ZVW_2018_0718.m**
 This post-processing routine reads the daily netCDF file and generates daily and hourly images. 
 
 Functions needed for this routine:
