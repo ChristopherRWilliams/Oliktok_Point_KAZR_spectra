@@ -13,10 +13,10 @@ This repository processes vertically pointing radar Doppler velocity spectra and
   
 # Processing Steps
 The processing consists of three different steps.
-  1. Pre-processing routine
-     a. Read partial hours of raw spectra in netCDF and save as hourly matlab files
-  2. Main processing routine 
-     a. Read hourly raw spectra files
+- 1. Pre-processing routine
+  - a. Read partial hours of raw spectra in netCDF and save as hourly matlab files
+- 2. Main processing routine 
+  - a. Read hourly raw spectra files
      b. Declutter spectra
      c. Estimate multiple-peak moments on decluttered spectra at original time resolution
      d. Construct 15-s shift-and-average spectra
