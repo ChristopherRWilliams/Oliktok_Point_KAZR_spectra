@@ -52,7 +52,7 @@ All processing files are written in Matlab and are in the directory:
 
 # Pre-Processing Routine
 
-Routine: main_make_oli_hourly_mat_spc_kazr_ge_copol_2018_0606.m
+Routine: **main_make_oli_hourly_mat_spc_kazr_ge_copol_2018_0606.m**
 This pre-processing routine reads partial hours of raw spectra written in netCDF format and saves the spectra in hourly matlab files. These intermediate hourly matlab files are read by the main processing routine so that it can work with complete hours of data. 
 
 Functions needed for this routine:
@@ -69,7 +69,7 @@ Directories needed for this routine:
 
 # Main processing routine
 
-Routine: main_make_oli_hourly_mat_spc_kazr_ge_copol_2018_0606.m
+Routine: **main_make_oli_hourly_mat_spc_kazr_ge_copol_2018_0606.m**
 This routine processes the Oliktok Point KAZR spectra as described in the Williams et al. (2018) AMT manuscript.
 
 Functions needed for this routine:
@@ -91,7 +91,7 @@ Functions needed for this routine:
 
 # Post-Processing Routines
 
-Routine: main_save_daily_ge_15sec_all_mom_as_netCDF_2018_0718.m
+Routine: **main_save_daily_ge_15sec_all_mom_as_netCDF_2018_0718.m**
 This post-processing routine reads the daily matlab file and generates a daily netCDF file.
 
 Functions needed for this routine:
