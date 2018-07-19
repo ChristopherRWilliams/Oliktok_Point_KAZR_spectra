@@ -74,7 +74,7 @@ Place multiple days of raw spectra files in the directory:
 - /raw_netCDF 	- directory containing multiple days of raw spectra in netCDF format (downloaded from ARM archive)
 
 
-# Main processing routine
+# Main Processing Routine
 
 Routine: **main_make_oli_hourly_mat_spc_kazr_ge_copol_2018_0606.m**
 This routine processes the Oliktok Point KAZR spectra as described in the Williams et al. (2018) AMT manuscript.
