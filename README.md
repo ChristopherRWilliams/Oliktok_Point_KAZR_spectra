@@ -17,14 +17,14 @@ The processing consists of three different steps.
   - a. Read partial hours of raw spectra in netCDF and save as hourly matlab files
 - 2. Main processing routine 
   - a. Read hourly raw spectra files
-     b. Declutter spectra
-     c. Estimate multiple-peak moments on decluttered spectra at original time resolution
-     d. Construct 15-s shift-and-average spectra
-     e. Estimate multiple-peak moments on 15-s averaged spectra
-     f. Concatenate hourly files into daily matlab files
-  3. Post-process routines
-     a. Read daily matlab processed files and save in netCDF format
-     b. Generate daily and hourly tif images using the netCDF data files
+  - b. Declutter spectra
+  - c. Estimate multiple-peak moments on decluttered spectra at original time resolution
+  - d. Construct 15-s shift-and-average spectra
+  - e. Estimate multiple-peak moments on 15-s averaged spectra
+  - f. Concatenate hourly files into daily matlab files
+- 3. Post-process routines
+  - a. Read daily matlab processed files and save in netCDF format
+  - b. Generate daily and hourly tif images using the netCDF data files
 
 # Directory Structure
 
