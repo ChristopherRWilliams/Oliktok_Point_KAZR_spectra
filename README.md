@@ -30,20 +30,20 @@ The processing consists of three different steps.
 
 The processing routines expect to find intermediate and final files in specific directories. Thus, the following directories need to be defined before running the routines: 
 
-  - /images_15sec_ave_moments 	- images generated after processing day of data
-	- /images_from_nc_files/daily 	- daily images generated from netCDF files
-	- /images_from_nc_files/hourly	- hourly images generated from netCDF files
-	- /m_files 			- all matlab m-files (routines) are in this directory
-  - /mat_15sec_ave_moments  	- hourly files, moments estimated from 15s averaged spectra
-	- /mat_15sec_ave_spc 		- hourly files, 15s averaged spectra
-	- /mat_clutter_stats 		- hourly files, clutter statistics
-	- /mat_daily_15sec_ave_moments 	- daily files, concatenation of hourly moment files
-  - /mat_dcl_mom 		- hourly files, decluttered moments for each profile
-  - /mat_hourly_spc_files 	- hourly raw spectra files in matlab format (input files for main routine)
-	- /mat_orig_mom 		- hourly files, moments before decluttering spectra
-	- /nc_daily_15sec_ave_moments 	- daily netCDF files of 15sec averaged moments
-  - /raw_netCDF 		- raw spectra in netCDF format (downloaded from ARM archive)
-  - /temp	- temporary files are stored and then deleted after processing each day
+- /images_15sec_ave_moments 	- images generated after processing day of data
+- /images_from_nc_files/daily 	- daily images generated from netCDF files
+- /images_from_nc_files/hourly	- hourly images generated from netCDF files
+- /m_files 			- all matlab m-files (routines) are in this directory
+- /mat_15sec_ave_moments  	- hourly files, moments estimated from 15s averaged spectra
+- /mat_15sec_ave_spc 		- hourly files, 15s averaged spectra
+- /mat_clutter_stats 		- hourly files, clutter statistics
+- /mat_daily_15sec_ave_moments 	- daily files, concatenation of hourly moment files
+- /mat_dcl_mom 		- hourly files, decluttered moments for each profile
+- /mat_hourly_spc_files 	- hourly raw spectra files in matlab format (input files for main routine)
+- /mat_orig_mom 		- hourly files, moments before decluttering spectra
+- /nc_daily_15sec_ave_moments 	- daily netCDF files of 15sec averaged moments
+- /raw_netCDF 		- raw spectra in netCDF format (downloaded from ARM archive)
+- /temp	- temporary files are stored and then deleted after processing each day
 
 # Processing Files
 
