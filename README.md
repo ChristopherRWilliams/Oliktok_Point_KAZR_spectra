@@ -45,6 +45,8 @@ The processing routines expect to find intermediate and final files in specific 
 - /raw_netCDF 		- raw spectra in netCDF format (downloaded from ARM archive)
 - /temp	- temporary files are stored and then deleted after processing each day
 
+Note that these directory structures use the Windows forward slash ‘/’ notation. Before running this code in the linux environment, the slashes need to be converted to backward slashes ‘\’.
+
 # Processing Files
 
 All processing files are written in Matlab and are in the directory:
