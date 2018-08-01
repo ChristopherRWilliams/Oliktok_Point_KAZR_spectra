@@ -119,6 +119,6 @@ The main output products from this processing are:
 - /images_from_nc_files/hourly		- hourly images generated from netCDF files
 
 # Data Files
-Due to the size of the raw data files, the user must download raw data files from the DOE ARM Archive. The Matlab code is written to process the KAZR spectra from Oliktok Point using the general, co-pol mode. The filenames for this file type is: “olikazrspeccmaskgecopolM1.a0.yyyymmdd.hhmmss.nc”.
-Before running this Matlab code, the use must download the raw spectra data for 20-June-2016 and place those files in the directory:
+Due to the size of the raw data files, data files are not stored on GitHub. The user must download raw data files from the DOE ARM Archive. The Matlab code is written to process KAZR spectra from Oliktok Point using the general, co-pol mode. The filenames for this file type follow this naming structure: “olikazrspeccmaskgecopolM1.a0.YYYYMMDD.HHMMSS.nc”.
+Before running this Matlab code, the user must download the raw spectra data for 20-June-2016 and place those files in the directory:
 - /raw_netCDF 	- directory containing multiple days of raw spectra in netCDF format (downloaded from ARM archive)
