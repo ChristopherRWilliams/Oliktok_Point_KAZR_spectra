@@ -3,9 +3,9 @@ Declutter spectra, shift-and-average spectra, and calculate multiple peak moment
 35-GHz Vertically Pointing Radar Processing at Oliktok Point, Alaska 
 
 Author: 	Christopher R. Williams
-Updated: 	19-July-2018
+Updated: 	01-August-2018
 
-This repository processes vertically pointing radar Doppler velocity spectra and estimates high-order moments of multiple peaks. As an overview, this processing performs:
+This repository processes vertically pointing radar Doppler velocity spectra and estimates high-order moments of multiple peaks. The processing is described in the manuscript “Clutter Mitigation, Multiple Peaks, and High-Order Spectral Moments in 35-GHz Vertically Pointing Radar Velocity Spectra”, submitted to Atmospheric Measurement Techniques, amt-2018-66).As an overview, this processing performs:
   1.	Remove ground clutter in velocity spectra
   2.	Estimate multiple peaks and high order moments
   3.	Average velocity spectra into 15-s intervals
@@ -14,14 +14,14 @@ This repository processes vertically pointing radar Doppler velocity spectra and
 # Processing Steps
 The processing consists of three different steps.
 - 1. Pre-processing routine
-  - a. Read partial hours of raw spectra in netCDF and save as hourly matlab files
+  - a. Read partial hours of raw spectra in netCDF format and save as hourly Matlab files
 - 2. Main processing routine 
   - a. Read hourly raw spectra files
   - b. Declutter spectra
   - c. Estimate multiple-peak moments on decluttered spectra at original time resolution
   - d. Construct 15-s shift-and-average spectra
   - e. Estimate multiple-peak moments on 15-s averaged spectra
-  - f. Concatenate hourly files into daily matlab files
+  - f. Concatenate hourly files into daily Matlab files
 - 3. Post-process routines
   - a. Read daily matlab processed files and save in netCDF format
   - b. Generate daily and hourly tif images using the netCDF data files
@@ -39,7 +39,7 @@ The processing routines expect to find intermediate and final files in specific 
 - /mat_clutter_stats 		- hourly files, clutter statistics
 - /mat_daily_15sec_ave_moments 	- daily files, concatenation of hourly moment files
 - /mat_dcl_mom 		- hourly files, decluttered moments for each profile
-- /mat_hourly_spc_files 	- hourly raw spectra files in matlab format (input files for main routine)
+- /mat_hourly_spc_files 	- hourly raw spectra files in Matlab format (input files for main routine)
 - /mat_orig_mom 		- hourly files, moments before decluttering spectra
 - /nc_daily_15sec_ave_moments 	- daily netCDF files of 15sec averaged moments
 - /raw_netCDF 		- raw spectra in netCDF format (downloaded from ARM archive)
@@ -48,7 +48,7 @@ The processing routines expect to find intermediate and final files in specific 
 # Processing Files
 
 All processing files are written in Matlab and are in the directory:
-- /m_files 			- All matlab m-files (routines) are in this directory
+- /m_files 			- All Matlab m-files (routines) are in this directory
 
 # Pre-Processing Routine
 
@@ -67,12 +67,11 @@ Directories needed for this routine:
 - /raw_netCDF 	- directory containing multiple days of raw spectra in netCDF format (downloaded from ARM archive)
 - /temp	- directory to store daily raw spectra. Spectra deleted from this directory after processing day of spectra.
 
-Data files from ARM Archive. This routine processes GE copol spectra from the data stream:
+Data files from ARM Archive. These routines process KAZR spectra from the general, co-pol mode with the following filename structure:
 - olikazrspeccmaskgecopolM1.a0.YYYYMMDD.HHMMSS.nc
 
 Place multiple days of raw spectra files in the directory:
 - /raw_netCDF 	- directory containing multiple days of raw spectra in netCDF format (downloaded from ARM archive)
-
 
 # Main Processing Routine
 
@@ -119,3 +118,7 @@ The main output products from this processing are:
 - /images_from_nc_files/daily 		- daily images generated from netCDF files
 - /images_from_nc_files/hourly		- hourly images generated from netCDF files
 
+# Data Files
+Due to the size of the raw data files, the user must download raw data files from the DOE ARM Archive. The Matlab code is written to process the KAZR spectra from Oliktok Point using the general, co-pol mode. The filenames for this file type is: “olikazrspeccmaskgecopolM1.a0.yyyymmdd.hhmmss.nc”.
+Before running this Matlab code, the use must download the raw spectra data for 20-June-2016 and place those files in the directory:
+- /raw_netCDF 	- directory containing multiple days of raw spectra in netCDF format (downloaded from ARM archive)
