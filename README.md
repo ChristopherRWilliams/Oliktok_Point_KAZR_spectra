@@ -5,7 +5,7 @@ Declutter spectra, shift-and-average spectra, and calculate multiple peak moment
 Author: 	Christopher R. Williams
 Updated: 	01-August-2018
 
-This repository processes vertically pointing radar Doppler velocity spectra and estimates high-order moments of multiple peaks. The processing is described in the manuscript “Clutter Mitigation, Multiple Peaks, and High-Order Spectral Moments in 35-GHz Vertically Pointing Radar Velocity Spectra”, submitted to Atmospheric Measurement Techniques, amt-2018-66).As an overview, this processing performs:
+This repository processes vertically pointing radar Doppler velocity spectra and estimates high-order moments of multiple peaks. The processing is described in the manuscript “Clutter Mitigation, Multiple Peaks, and High-Order Spectral Moments in 35-GHz Vertically Pointing Radar Velocity Spectra”, submitted to Atmospheric Measurement Techniques (amt-2018-66).As an overview, this processing performs:
   1.	Remove ground clutter in velocity spectra
   2.	Estimate multiple peaks and high order moments
   3.	Average velocity spectra into 15-s intervals
